@@ -5,6 +5,7 @@ class PeopleController < ApplicationController
 
   def create    
     Person.create(person_params)
+    binding.pry
     redirect_to people_path
   end
 
